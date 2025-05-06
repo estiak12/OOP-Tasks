@@ -1,0 +1,38 @@
+class restaurant{
+    private String foodtype;
+    private int foodprice;
+    private int tax;
+    //private double totalprice;
+
+    public restaurant(String foodtype,int foodprice,int tax){
+        this.foodtype=foodtype;
+        this.foodprice=foodprice;
+        this.tax=tax;
+    }
+    int returntime(){
+    return 20;
+    }
+    void deliverytime(){
+        System.out.println("The food name is "+foodtype);
+        System.out.println("The delivery time of this food is ="+returntime());
+    }
+    void calculatetotalbill(){
+        int total=foodprice*tax;
+        System.out.println("You eat "+foodtype+" ans the price of this food is "+total);
+    }
+ }
+ class normalfood extends restaurant{
+    public normalfood(String foodtype, int foodprice,int tax){
+        super(foodtype,foodprice,tax);
+    }
+     int returntime(){
+      return 290;
+    }
+ }
+ public class Superclass{
+    public static void main(String [] args){
+        normalfood food=new normalfood("vhat",30,10);
+        food.deliverytime();
+        food.calculatetotalbill();
+    }
+ }
