@@ -6,7 +6,6 @@ public class Superclass{
     int base=sc.nextInt();
     int height=sc.nextInt();
     float val=0.5f;
-
     float area;
     area=val*base*height;
     System.out.println("The area is "+area);
@@ -69,4 +68,81 @@ public class EquilateralTriangleArea {
         System.out.printf("Area of the equilateral triangle: %.4f\n", area);
     }
 }
+// A prograam that check that wheather a value is positive or negative
+
+import java.util.Scanner;
+public class Superclass{
+    public static void main(String [] args){
+    Scanner sc=new Scanner(System.in);
+    int val=sc.nextInt();
+    if(val>=0)System.out.println("The value is positive ");
+    else System.out.println("The value is Negative "); 
+    }
+}
+
+//A prograam that check that wheather a value is divisible by 2 or not 
+
+import java.util.Scanner;
+public class Superclass{
+    public static void main(String [] args){
+    Scanner sc=new Scanner(System.in);
+    int val=sc.nextInt();
+    if(val%2==0)System.out.println("The value is divisible by two ");
+    else System.out.println("The value is not divisible by two "); 
+    }
+}
+
+//Result making using switch case 
+import java.util.Scanner;
+public class Superclass{
+    public static void main(String [] args){
+    Scanner sc=new Scanner(System.in);
+    int mark=sc.nextInt();
+    switch(mark/10){
+        case 4:System.out.println("The obtain Grade is C+");
+        break;
+        case 5:System.out.println("The obtain Grade is C+");
+        break;
+        case 6:System.out.println("The obtain Grade is B");
+        break;
+        case 7:System.out.println("The obtain Grade is A-");
+        break;
+        case 8:System.out.println("The obtain grade is A");
+        break;
+        case 9:System.out.println("The obtain grade is A+");
+        break;
+        default :System.out.println("The obtain Grade is F");
+    }
+    }
+}
+
+// This is the simple calculator code 
+import java.util.Scanner;
+public class Superclass{
+    public static void main(String [] args){
+    Scanner sc=new Scanner(System.in);
+    char  c=sc.next().charAt(0);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+    if(c=='+'){
+        int result=(a+b);
+        System.out.println(result);
+    }
+    else if(c=='-'){
+        int result=(a-b);
+        System.out.println(result);
+    }
+    else if(c=='*'){
+        int result=a*b;
+        System.out.println(result);
+    }
+    else {
+        float result=(a/b);
+        System.out.println(result);
+    }
+    }
+}
+
+
+
 
