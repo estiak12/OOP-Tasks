@@ -1,0 +1,54 @@
+abstract class Employee {
+    private String name;
+    private int id;
+    private String department;
+
+    // created a constructor;
+    public Employee(String name, int id, String department) {
+        this.name = name;
+        this.id = id;
+        this.department = department;
+    }
+
+    abstract void calculatepay();
+}
+
+class FulltimeEmployee extends Employee {
+    private double fixedsalary;
+
+    public FulltimeEmployee(String name, int id, String department, double fixedsalary) {
+        super(name, id, department);
+        this.fixedsalary = fixedsalary;
+    }
+
+    @Override
+    void calculatepay() {
+        System.out.println("The salary of full time Employee is =" + fixedsalary);
+    }
+}
+
+class ParttimeEmployee extends Employee {
+    private double hourlyrate;
+    private int hourworked;
+
+    public ParttimeEmployee(String name, int id, String department, double hourlyrate, int hourworked) {
+        super(name, id, department);
+        this.hourlyrate = hourlyrate;
+        this.hourworked = hourworked;
+    }
+
+    @Override
+    void calculatepay() {
+        System.out.println("The salary of part-time Employee is =" + hourlyrate * hourworked);
+    }
+}
+
+public class Superclass {
+    public static void main(String[] args) {
+        FulltimeEmployee full = new FulltimeEmployee("Estiak", 1234, "Student", 50000);
+        full.calculatepay(); // Call the calculatepay method
+
+        ParttimeEmployee part = new ParttimeEmployee("Sakib", 5678, "Marketing", 30.0, 160);
+        part.calculatepay(); // Call the calculatepay method for part-time employee
+    }
+}
