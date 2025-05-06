@@ -1,0 +1,72 @@
+// take base and height from the user and fine the area of the triangle 
+import java.util.Scanner;
+public class Superclass{
+    public static void main(String [] args){
+    Scanner sc=new Scanner(System.in);
+    int base=sc.nextInt();
+    int height=sc.nextInt();
+    float val=0.5f;
+
+    float area;
+    area=val*base*height;
+    System.out.println("The area is "+area);
+    }
+}
+
+//find the voulme of a Ball 
+import java.util.Scanner;
+public class Superclass{
+    public static void main(String [] args){
+    Scanner sc=new Scanner(System.in);
+    int radius=sc.nextInt();
+    float val=4/3f;
+    float pi=3.1416f;
+
+    float area;
+    area=val*pi*(radius*radius*radius);
+    System.out.println("The area is "+area);
+    }
+}
+
+// Find the area of a triangle
+import java.util.Scanner;
+public class Superclass{
+    public static void main(String [] args){
+    Scanner sc=new Scanner(System.in);
+    int radius=sc.nextInt();
+   // float val=4/3f;
+    float pi=3.1416f;
+
+    float area;
+    area=pi*(radius*radius);
+    System.out.println("The area is "+area);
+    }
+}
+// convert celcius scale temperature to Farenhite scale
+import java.util.Scanner;
+public class Superclass{
+    public static void main(String [] args){
+    Scanner sc=new Scanner(System.in);
+    int celcius=sc.nextInt();
+   // float val=4/3f;
+    float val=(9*celcius)/5;
+    val+=32;
+
+    System.out.println("The area is "+val);
+    }
+}
+
+// find the area of a equiletarel triangle
+public class EquilateralTriangleArea {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of the side of the equilateral triangle: ");
+        double side = scanner.nextDouble();
+
+        double area = (Math.sqrt(3) / 4) * side * side;
+
+        System.out.printf("Area of the equilateral triangle: %.4f\n", area);
+    }
+}
+
